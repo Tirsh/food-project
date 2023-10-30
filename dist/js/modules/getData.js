@@ -38,7 +38,6 @@ function getData() {
 
             postData("http://localhost:3000/requests", JSON.stringify(json))
             .then(data => {
-                console.log(data);
                 modalMessage(messages.sussess);
             }).catch(() => {
                 modalMessage(messages.fail);

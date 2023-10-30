@@ -35,7 +35,6 @@ function timer(id, deadline) {
 
         function updateTimer() {
             const t = getCurrentTimerData(endTime);
-            console.log(t);
             days.innerHTML = getZero(t.day);
             hours.innerHTML = getZero(t.hour);
             minutes.innerHTML = getZero(t.minute);

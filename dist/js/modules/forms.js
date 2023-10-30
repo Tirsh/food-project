@@ -25,7 +25,6 @@ function forms(formSelector, timer) {
 
             postData("http://localhost:3000/requests", json)
             .then(data => {
-                console.log(data);
                 modalMessage(messages.sussess);
             }).catch(() => {
                 modalMessage(messages.fail);

@@ -81,7 +81,6 @@ function calc() {
                         age = +input.value;
                         break;                          
                 }
-                console.log();
                 makeCalc();
             })
         });

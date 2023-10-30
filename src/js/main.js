@@ -96,7 +96,6 @@ function calc() {
             age = +input.value;
             break;
         }
-        console.log();
         makeCalc();
       });
     });
@@ -158,7 +157,6 @@ function forms(formSelector, timer) {
       var formData = new FormData(form);
       var json = JSON.stringify(Object.fromEntries(formData.entries()));
       (0,_services_services__WEBPACK_IMPORTED_MODULE_8__.postData)("http://localhost:3000/requests", json).then(function (data) {
-        console.log(data);
         modalMessage(messages.sussess);
       }).catch(function () {
         modalMessage(messages.fail);
@@ -696,7 +694,6 @@ function timer(id, deadline) {
     updateTimer();
     function updateTimer() {
       var t = getCurrentTimerData(endTime);
-      console.log(t);
       days.innerHTML = getZero(t.day);
       hours.innerHTML = getZero(t.hour);
       minutes.innerHTML = getZero(t.minute);

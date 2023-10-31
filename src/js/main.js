@@ -143,7 +143,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function forms(formSelector, timer) {
   var messages = {
-    loading: "icons/spinner.svg",
+    loading: "icons/spinner.png",
     sussess: "Спасибо! Мы скоро с вами свяжемся.",
     fail: "Что-то пошло не так!"
   };
@@ -271,8 +271,8 @@ function menu() {
     }]);
     return MenuItem;
   }();
-  (0,_services_services__WEBPACK_IMPORTED_MODULE_12__.getResource)("http://localhost:3000/menu").then(function (data) {
-    data.forEach(function (_ref) {
+  (0,_services_services__WEBPACK_IMPORTED_MODULE_12__.getResource)("./db.json").then(function (data) {
+    data.menu.forEach(function (_ref) {
       var img = _ref.img,
         alt = _ref.alt,
         title = _ref.title,

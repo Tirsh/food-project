@@ -2,7 +2,7 @@ function getData() {
     // Send to server
 
     const messages = {
-        loading: "icons/spinner.svg",
+        loading: "icons/spinner.png",
         sussess: "Спасибо! Мы скоро с вами свяжемся.",
         fail: "Что-то пошло не так!"
     }

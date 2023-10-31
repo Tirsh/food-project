@@ -36,9 +36,9 @@ import { getResource } from "./services/services";
         }
     }
 
-    getResource("http://localhost:3000/menu")
+    getResource("./db.json")
         .then(data => {
-            data.forEach(({img, alt, title, descr, price}) => {
+            data.menu.forEach(({img, alt, title, descr, price}) => {
                 new MenuItem(img, alt, title, descr, price, ".menu .container", "menu__item").render();
             })
         })
